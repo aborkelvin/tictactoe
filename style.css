@@ -1,0 +1,31 @@
+.container{
+    width: 60%;
+    height: 600px;
+    background-color: aqua;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    top: 60px;
+    left: 60px;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.container>div{
+border: 3px solid black;
+}
+
+.players{
+    text-align: center;
+    width: 95px;
+    background-color:skyblue;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+.player1{
+    position: absolute;
+    top: 100px;
+}
