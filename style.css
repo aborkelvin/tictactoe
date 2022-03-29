@@ -71,3 +71,11 @@ button{
 .item1,.item2,.item3{
     border-bottom: 1px solid black;
 }
+.result{
+    position: absolute;
+    right: 100px;
+    top: 82px;
+    width: 20vw;
+    height: 180px;
+    background-color: rgb(81, 105, 107);
+}
