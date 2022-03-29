@@ -1,31 +1,73 @@
+.body{
+    
+}
 .container{
-    width: 60%;
-    height: 600px;
-    background-color: aqua;
+    width: 60vw;
+    height: 500px;
+    background-color: rgb(110, 136, 136);
     border: none;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     position: relative;
-    top: 60px;
+    top: 80px;
     left: 60px;
-    font-size: 10rem;
+    font-size: 5em;
     text-align: center;
 }
 
 .container>div{
-border: 3px solid black;
+border: none;
 }
 
-.players{
+button{
     text-align: center;
     width: 95px;
     background-color:skyblue;
     position: absolute;
-    right: 20px;
-    top: 80px;
+    left: 28vw;
+    top: 20px;
 }
+
 .player1{
     position: absolute;
-    top: 100px;
+    left: 38vw;
+}
+
+.inturn{
+    height: 40px;
+    background-color: aqua;
+}
+.row1,.row2,.row3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: auto;
+    grid-template-rows: 1fr;
+}
+.container>div>div{
+    align-items: center;
+}
+
+
+.restart{
+    position: absolute;
+    top: 10px;
+    left: 50vw;
+    height: 70px;
+    border:none;
+    border-radius: 20px;
+}
+.restart:focus{
+    outline:none;
+}
+.item3,.item6,.item9{
+    border-left: 1px solid black;
+}
+.item1,.item4,.item7{
+    border-right: 1px solid black;
+}
+.item7,.item8,.item9{
+    border-top: 1px solid black;
+}
+.item1,.item2,.item3{
+    border-bottom: 1px solid black;
 }
