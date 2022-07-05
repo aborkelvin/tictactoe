@@ -45,6 +45,19 @@ button{
     left: 38vw;
 }
 
+.turn-img{
+    width: 20px;
+}
+
+.turn{
+    display: inline-block;
+}
+
+.turn-txt{
+ color:#a8bfc9;
+ font-size: 20px;
+}
+
 .inturn{
     height: 40px;
     background-color: aqua;
@@ -89,6 +102,8 @@ button{
     border: 1px;
     border-radius: 10px;
     background-color: #1f3641;
+    display: flex;    
+    justify-content: center;    
 }
 
 .gen:hover{
