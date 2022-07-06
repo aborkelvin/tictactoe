@@ -10,15 +10,23 @@
 </head>
 <body>
     <div class="topcontainer">
-        <button class="player1 players"> X</button>
-    <button class="player2 players">O</button>
+        <div class="game-header">
+            <div class="game-headerimg">
+                <img src="asset 0.svg" alt='player X image'>
+                <img src="asset 1.svg" alt='player O image'>
+            </div>
+            <div class="turn">
+                <img src = 'asset 0.svg' class="turn-img">
+                 <span class="turn-txt"> TURN</span>
+            </div>
+            <button class="restart cursor">
+                <img src="asset 3.svg" alt="restart image" class=" cursor">
+            </button>
+            
+        </div>
 
-    <div class="turn">
-        <img src = 'asset 0.svg' class="turn-img"> <span class="turn-txt"> TURN</span>
-    </div>
-
-    <button class="restart cursor">Restart game</button>
-        <div class="container">
+    
+        <div class="container gameboard">
             <div class="row1">
                 <div class="item1 gen"></div>
                 <div class="item2 gen"></div>
@@ -35,9 +43,24 @@
                 <div class="item9 gen"></div>
             </div>
         </div>
+
+        <div class="result">
+            <div class="gamescores" id="score1">
+                <span class="player">X (player one)</span>
+                <div class="score">0</div>
+            </div>
+            <div class="gamescores" id="score2">
+                <span class="player">TIES</span>
+                <div class="score">0</div>
+            </div>
+            <div class="gamescores" id="score3">
+                <span class="player">O (player two)</span>
+                <div class="score">0</div>
+            </div>           
+        </div>
     </div>
 
     
-    <!-- <div class="result"></div> -->
+    
 </body>
 </html>
